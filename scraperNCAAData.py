@@ -18,7 +18,7 @@ driver.find_element(By.CLASS_NAME, 'css-47sehv').click()
 a = ActionChains(driver)
 
 def store_data(data, filename):
-    with open('./data/'+ filename + '.csv', 'w') as out:
+    with open('./data/raw/'+ filename + '.csv', 'w') as out:
         out.write(data)
     
 
