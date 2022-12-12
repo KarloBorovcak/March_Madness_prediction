@@ -1,6 +1,6 @@
 ## 2013-2022 NCAA Team data
 
-#Dataset variable description:
+Dataset variable description:
 
 G - Number of games
 Overall.W - Total wins
@@ -20,9 +20,8 @@ Home.L - Number of home loses
 Away.W - Number of away wins
 Away.L - Number of away loses
 
-RENAME THIS
-Tm. - Team total points scored
-Opp. - Opponnent total points scored
+TP - Team total points scored
+OP - Opponnent total points scored
 
 MP - Total minutes played
 FG - Total field goals made

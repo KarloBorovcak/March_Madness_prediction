@@ -5,12 +5,14 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.action_chains import ActionChains
 
 
-year = 2013
+year = 2013 #Starting year which you want to scrape data for
+path = "C:\Program Files (x86)\chromedriver.exe" #Path of chrome driver installation
+
 stats_type = ["-opponent-stats", "-advanced-school-stats", "-advanced-opponent-stats"]
 page = "https://www.sports-reference.com/cbb/seasons/" + str(year) + "-school-stats.html"
 options = webdriver.ChromeOptions()
 options.add_argument('--ignore-certificate-errors')
-ser = Service("C:\Program Files (x86)\chromedriver.exe")
+ser = Service(path)
 driver = webdriver.Chrome(service=ser)
 
 driver.get(page)
