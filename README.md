@@ -70,3 +70,7 @@ TOV% - (Turnover Percentage) an estimate of turnovers per 100 plays
 ORB% - (Offensive Rebound Percentage) an estimate of the percentage of available offensive rebounds a player grabbed while he was on the floor
 
 FT/FGA - Free Throws Per Field Goal Attempt
+
+SEED - Team seed 
+
+POSTSEASON - Round of tournament reached
