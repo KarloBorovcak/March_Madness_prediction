@@ -1,8 +1,6 @@
 import pandas as pd
 import os
 
-
-
 def clean_data(lista):
     for i,data in enumerate(lista):
         data.columns = data.iloc[0]
@@ -27,29 +25,22 @@ def clean_data(lista):
 
 
 
-path = './data/rawTeamStats/'
-new_path = './data/cleanTeamStats/'
+path = './data/raw/'
+new_path = './data/clean/'
 dir_list = os.listdir(path)
 lista = []
 
 while len(dir_list) > 0:
-    if len(dir_list) == 4:
-        lista = dir_list[0:]
-    else:
-        lista = dir_list[0:5]
-
     lista_df = []
 
-    lista_df.append(pd.read_csv(path + lista[2]))
-    lista_df.append(pd.read_csv(path + lista[0]))
+    lista_df.append(pd.read_csv(path + dir_list[1]))
+    lista_df.append(pd.read_csv(path + dir_list[0]))
 
-    data_school = clean_data(lista_df[0:2])
+    data_school = clean_data(lista_df)
     
 
-
-    data_school.to_csv(new_path + lista[3], index=False)
+    data_school.to_csv(new_path + dir_list[1], index=False)
     
-    
-    for i in range(4):
+    for i in range(2):
         del dir_list[0]
 
