@@ -3,8 +3,11 @@
 Dataset variable description:
 
 G - Number of games
+
 Overall.W - Total wins
+
 Overall.L - Total loses
+
 W-L% - Total win-loss percentage
 
 SRS - (Simple Rating System) A rating that takes into account average point differential and strength of schedule. The rating is denominated in points above/below average, where zero is average. Non-Division I games are excluded from the ratings.
@@ -12,37 +15,53 @@ SRS - (Simple Rating System) A rating that takes into account average point diff
 SOS - (Strength of Schedule) A rating of strength of schedule. The rating is denominated in points above/below average, where zero is average. Non-Division I games are excluded from the ratings.
 
 Conf.W - Number of conference wins
+
 Conf.L - Number of conference loses
 
 Home.W - Number of home wins
+
 Home.L - Number of home loses
 
 Away.W - Number of away wins
+
 Away.L - Number of away loses
 
 TP - Team total points scored
+
 OP - Opponnent total points scored
 
 MP - Total minutes played
+
 FG - Total field goals made
+
 FGA - Total field goal attempts
+
 FG% - Field goal percentage
 
 3P - Total three pointers made
+
 3PA - Total three point attempts
+
 3P% - Three point percentage
 
 FT - Total free throws made
+
 FTA - Total free throw attempts
+
 FT% -  Free throw percentage
 
 ORB - Offensive rebounds
+
 TRB - Total rebounds
 
 AST - Total asists 
+
 STL - Total steals
+
 BLK - Total blocks
+
 TOV - Total turnovers
+
 PF - Total personal fouls
 
 Pace - (Pace Factor) An estimate of school possessions per 40 minutes
