@@ -1,4 +1,4 @@
-## 2013-2022 NCAA Team data
+## 2014-2021 NCAA Team data
 
 Dataset variable description:
 
@@ -26,43 +26,45 @@ Away.W - Number of away wins
 
 Away.L - Number of away loses
 
-TP - Team total points scored
+TP - Team points scored per game       
 
-OP - Opponnent total points scored
+OP - Opponnent points scored per game       
 
-MP - Total minutes played
+MP - Total minutes played        
 
-FG - Total field goals made
+FG - Field goals made per game        
 
-FGA - Total field goal attempts
+FGA - Field goal attempts per game        
+        
+FG% - Field goal percentage         
 
-FG% - Field goal percentage
+3P - Three pointers made per game       
 
-3P - Total three pointers made
+3PA - Three point attempts per game         
 
-3PA - Total three point attempts
+3P% - Three point percentage       
 
-3P% - Three point percentage
+FT - Free throws made per game  
 
-FT - Total free throws made
+FTA - Free throw attempts per game  
 
-FTA - Total free throw attempts
+FT% - Free throw percentage 
 
-FT% -  Free throw percentage
+TRB - Total rebounds per game
 
-ORB - Offensive rebounds
+ORB - Offensive rebounds per game 
 
-TRB - Total rebounds
+DRB - Defensive rebounds per game
 
-AST - Total asists 
+AST -  Assists per game
 
-STL - Total steals
+STL - Steals per game
 
-BLK - Total blocks
+BLK - Blocks per game
 
-TOV - Total turnovers
+TOV - Turnovers per game 
 
-PF - Total personal fouls
+PF - Personal fouls per game 
 
 Pace - (Pace Factor) An estimate of school possessions per 40 minutes
 
@@ -93,3 +95,5 @@ FT/FGA - Free Throws Per Field Goal Attempt
 SEED - Team seed 
 
 POSTSEASON - Round of tournament reached
+
+REGION - Region of the tournament
