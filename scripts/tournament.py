@@ -80,7 +80,7 @@ class Tournament:
                         
         return generated
 
-    def predict_bracket(self):
+    def print_bracket(self):
         for round in self.bracket.keys():
             if round != 'Champions':
                 for region in self.bracket[round]:   
@@ -88,14 +88,14 @@ class Tournament:
                             continue
                         print(round, region)
                         if round == 'F4':
-                            print(self.bracket[round][region])
+                            print(' vs '.join(self.bracket[round][region]))
                             print("WINNER: ", self.bracket[round][region][0])
                         else:
                             for matchup in self.bracket[round][region]:
-                                print(matchup)
+                                print(' vs '.join(matchup))
                                 print("WINNER: ", matchup[0])
             else:
-                print("FINAL ",self.bracket[round])
+                print("FINAL ",' vs '.join(self.bracket[round]))
                 print("WINNER: ", self.bracket[round][0])
 
 
