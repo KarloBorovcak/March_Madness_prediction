@@ -15,7 +15,8 @@ def get_stat_difference(stat, team1, team2, year):
 
 
 def make_training_data(tournaments, path):
-    temp = {'Team1': [], 'Team2': [], 'Year': [], 'Team1Win': [], 'SRS': [], 'ORB': [], 'PF': [], '3P': []}
+    temp = {'Team1': [], 'Team2': [], 'Year': [], 'Team1Win': [],
+     'SRS': [], 'ORB': [], 'PF': [], '3P': [], 'STL' : [], 'AST': [], 'BLK': [], 'FT%': [], 'TS%':[], 'SEED': []}
     first = True
     for tournament in tournaments:
         for round in tournament.bracket.keys():
@@ -33,6 +34,12 @@ def make_training_data(tournaments, path):
                                 temp['ORB'].append(get_stat_difference('ORB', tournament.bracket[round][region][0], tournament.bracket[round][region][1], tournament.year))
                                 temp['PF'].append(get_stat_difference('PF', tournament.bracket[round][region][0], tournament.bracket[round][region][1], tournament.year))
                                 temp['3P'].append(get_stat_difference('3P', tournament.bracket[round][region][0], tournament.bracket[round][region][1], tournament.year))
+                                temp['STL'].append(get_stat_difference('STL', tournament.bracket[round][region][0], tournament.bracket[round][region][1], tournament.year))
+                                temp['AST'].append(get_stat_difference('AST', tournament.bracket[round][region][0], tournament.bracket[round][region][1], tournament.year))
+                                temp['BLK'].append(get_stat_difference('BLK', tournament.bracket[round][region][0], tournament.bracket[round][region][1], tournament.year))
+                                temp['FT%'].append(get_stat_difference('FT%', tournament.bracket[round][region][0], tournament.bracket[round][region][1], tournament.year))
+                                temp['TS%'].append(get_stat_difference('TS%', tournament.bracket[round][region][0], tournament.bracket[round][region][1], tournament.year))
+                                temp['SEED'].append(get_stat_difference('SEED', tournament.bracket[round][region][0], tournament.bracket[round][region][1], tournament.year))
                                 first = False
                             else:
                                 temp['Team1'].append(tournament.bracket[round][region][1])
@@ -43,6 +50,12 @@ def make_training_data(tournaments, path):
                                 temp['ORB'].append(get_stat_difference('ORB', tournament.bracket[round][region][1], tournament.bracket[round][region][0], tournament.year))
                                 temp['PF'].append(get_stat_difference('PF', tournament.bracket[round][region][1], tournament.bracket[round][region][0], tournament.year))
                                 temp['3P'].append(get_stat_difference('3P', tournament.bracket[round][region][1], tournament.bracket[round][region][0], tournament.year))
+                                temp['STL'].append(get_stat_difference('STL', tournament.bracket[round][region][1], tournament.bracket[round][region][0], tournament.year))
+                                temp['AST'].append(get_stat_difference('AST', tournament.bracket[round][region][1], tournament.bracket[round][region][0], tournament.year))
+                                temp['BLK'].append(get_stat_difference('BLK', tournament.bracket[round][region][1], tournament.bracket[round][region][0], tournament.year))
+                                temp['FT%'].append(get_stat_difference('FT%', tournament.bracket[round][region][1], tournament.bracket[round][region][0], tournament.year))
+                                temp['TS%'].append(get_stat_difference('TS%', tournament.bracket[round][region][1], tournament.bracket[round][region][0], tournament.year))
+                                temp['SEED'].append(get_stat_difference('SEED', tournament.bracket[round][region][1], tournament.bracket[round][region][0], tournament.year))
                                 first = True
                         else:
                             for matchup in tournament.bracket[round][region]:
@@ -55,6 +68,12 @@ def make_training_data(tournaments, path):
                                     temp['ORB'].append(get_stat_difference('ORB', matchup[0], matchup[1], tournament.year))
                                     temp['PF'].append(get_stat_difference('PF', matchup[0], matchup[1], tournament.year))
                                     temp['3P'].append(get_stat_difference('3P', matchup[0], matchup[1], tournament.year))
+                                    temp['STL'].append(get_stat_difference('STL', matchup[0], matchup[1], tournament.year))
+                                    temp['AST'].append(get_stat_difference('AST', matchup[0], matchup[1], tournament.year))
+                                    temp['BLK'].append(get_stat_difference('BLK', matchup[0], matchup[1], tournament.year))
+                                    temp['FT%'].append(get_stat_difference('FT%', matchup[0], matchup[1], tournament.year))
+                                    temp['TS%'].append(get_stat_difference('TS%', matchup[0], matchup[1], tournament.year))
+                                    temp['SEED'].append(get_stat_difference('SEED', matchup[0], matchup[1], tournament.year))
                                     first = False
                                 else:
                                     temp['Team1'].append(matchup[1])
@@ -65,6 +84,12 @@ def make_training_data(tournaments, path):
                                     temp['ORB'].append(get_stat_difference('ORB', matchup[1], matchup[0], tournament.year))
                                     temp['PF'].append(get_stat_difference('PF', matchup[1], matchup[0], tournament.year))
                                     temp['3P'].append(get_stat_difference('3P', matchup[1], matchup[0], tournament.year))
+                                    temp['STL'].append(get_stat_difference('STL', matchup[1], matchup[0], tournament.year))
+                                    temp['AST'].append(get_stat_difference('AST', matchup[1], matchup[0], tournament.year))
+                                    temp['BLK'].append(get_stat_difference('BLK', matchup[1], matchup[0], tournament.year))
+                                    temp['FT%'].append(get_stat_difference('FT%', matchup[1], matchup[0], tournament.year))
+                                    temp['TS%'].append(get_stat_difference('TS%', matchup[1], matchup[0], tournament.year))
+                                    temp['SEED'].append(get_stat_difference('SEED', matchup[1], matchup[0], tournament.year))
                                     first = True
             else:
                 if first:
@@ -76,6 +101,12 @@ def make_training_data(tournaments, path):
                     temp['ORB'].append(get_stat_difference('ORB', tournament.bracket[round][0], tournament.bracket[round][1], tournament.year))
                     temp['PF'].append(get_stat_difference('PF', tournament.bracket[round][0], tournament.bracket[round][1], tournament.year))
                     temp['3P'].append(get_stat_difference('3P', tournament.bracket[round][0], tournament.bracket[round][1], tournament.year))
+                    temp['STL'].append(get_stat_difference('STL', tournament.bracket[round][0], tournament.bracket[round][1], tournament.year))
+                    temp['AST'].append(get_stat_difference('AST', tournament.bracket[round][0], tournament.bracket[round][1], tournament.year))
+                    temp['BLK'].append(get_stat_difference('BLK', tournament.bracket[round][0], tournament.bracket[round][1], tournament.year))
+                    temp['FT%'].append(get_stat_difference('FT%', tournament.bracket[round][0], tournament.bracket[round][1], tournament.year))
+                    temp['TS%'].append(get_stat_difference('TS%', tournament.bracket[round][0], tournament.bracket[round][1], tournament.year))
+                    temp['SEED'].append(get_stat_difference('SEED', tournament.bracket[round][0], tournament.bracket[round][1], tournament.year))
                     first = False
                 else:
                     temp['Team1'].append(tournament.bracket[round][1])
@@ -86,84 +117,46 @@ def make_training_data(tournaments, path):
                     temp['ORB'].append(get_stat_difference('ORB', tournament.bracket[round][1], tournament.bracket[round][0], tournament.year))
                     temp['PF'].append(get_stat_difference('PF', tournament.bracket[round][1], tournament.bracket[round][0], tournament.year))
                     temp['3P'].append(get_stat_difference('3P', tournament.bracket[round][1], tournament.bracket[round][0], tournament.year))
+                    temp['STL'].append(get_stat_difference('STL', tournament.bracket[round][1], tournament.bracket[round][0], tournament.year))
+                    temp['AST'].append(get_stat_difference('AST', tournament.bracket[round][1], tournament.bracket[round][0], tournament.year))
+                    temp['BLK'].append(get_stat_difference('BLK', tournament.bracket[round][1], tournament.bracket[round][0], tournament.year))
+                    temp['FT%'].append(get_stat_difference('FT%', tournament.bracket[round][1], tournament.bracket[round][0], tournament.year))
+                    temp['TS%'].append(get_stat_difference('TS%', tournament.bracket[round][1], tournament.bracket[round][0], tournament.year))
+                    temp['SEED'].append(get_stat_difference('SEED', tournament.bracket[round][1], tournament.bracket[round][0], tournament.year))
                     first = True
 
     data = pd.DataFrame(temp)
     data.to_csv(path, index=False)
-
-def make_test_data(tournament):
-    temp = {'Team1': [], 'Team2': [], 'Team1Win': [], 'Year': []}
-    for round in tournament.bracket.keys():
-            if round != 'Champions':
-                for region in tournament.bracket[round]:   
-                        if tournament.bracket[round][region] == []:
-                            continue
-                        if round == 'F4':
-                            if first:
-                                temp['Team1'].append(tournament.bracket[round][region][0])
-                                temp['Team2'].append(tournament.bracket[round][region][1])
-                                temp['Team1Win'].append(1)
-                                temp['Year'].append(tournament.year)
-                                first = False
-                            else:
-                                temp['Team1'].append(tournament.bracket[round][region][1])
-                                temp['Team2'].append(tournament.bracket[round][region][0])
-                                temp['Team1Win'].append(0)
-                                temp['Year'].append(tournament.year)
-                                first = True
-                            
-                        else:
-                            for matchup in tournament.bracket[round][region]:
-                                if first:
-                                    temp['Team1'].append(matchup[0])
-                                    temp['Team2'].append(matchup[1])
-                                    temp['Team1Win'].append(1)
-                                    temp['Year'].append(tournament.year)
-                                    first = False
-                                else:
-                                    temp['Team1'].append(matchup[1])
-                                    temp['Team2'].append(matchup[0])
-                                    temp['Team1Win'].append(0)
-                                    temp['Year'].append(tournament.year)
-                                    first = True
-                                
-            else:
-                if first:
-                    temp['Team1'].append(tournament.bracket[round][0])
-                    temp['Team2'].append(tournament.bracket[round][1])
-                    temp['Team1Win'].append(1)
-                    temp['Year'].append(tournament.year)
-                    first = False
-                else:
-                    temp['Team1'].append(tournament.bracket[round][1])
-                    temp['Team2'].append(tournament.bracket[round][0])
-                    temp['Team1Win'].append(0)
-                    temp['Year'].append(tournament.year)
-                    first = True
                
 
 
 
 
 
-tournaments = []
+total_score = 0
+for j in range(2014,2022):
+    if j != 2020:
+        tournaments = []
+        for i in range(2014, 2022):
+            if i not in [2020, j]:
+                tournament = Tournament(df, None, i)
+                tournaments.append(tournament)
 
-for i in range(2014, 2022):
-    if i not in [2020, 2019, 2021]:
-        tournament = Tournament(df, None, i)
-        tournaments.append(tournament)
+        make_training_data([Tournament(df, None, j)], './data/model/testData.csv')
+        make_training_data(tournaments, './data/model/trainingData.csv')
 
-make_training_data([Tournament(df, None, 2019), Tournament(df, None, 2021)], './data/model/testData.csv')
-make_training_data(tournaments, './data/model/trainingData.csv')
+        dftrain = pd.read_csv('./data/model/trainingData.csv')
+        dftest = pd.read_csv('./data/model/testData.csv')
 
-dftrain = pd.read_csv('./data/model/trainingData.csv')
-dftest = pd.read_csv('./data/model/testData.csv')
+        model = LogisticRegression(random_state=0).fit(dftrain[['SRS', 'ORB', 'PF', '3P', 'STL', 'AST', 'BLK', 'FT%', 'TS%', 'SEED']], dftrain['Team1Win'])
 
-model = LogisticRegression(random_state=0).fit(dftrain[['SRS', 'ORB', 'PF', '3P']], dftrain['Team1Win'])
+        prediction = model.predict(dftest[['SRS', 'ORB', 'PF', '3P', 'STL', 'AST', 'BLK', 'FT%', 'TS%', 'SEED']])
+        dftest['Prediction'] = prediction
+        dftest.to_csv('./data/model/predictions.csv', index=False)
+        score = model.score(dftest[['SRS', 'ORB', 'PF', '3P', 'STL', 'AST', 'BLK', 'FT%', 'TS%', 'SEED']], dftest['Team1Win'])
+        total_score += score
+        print(j, ': ', score)
 
-prediction = model.predict(dftest[['SRS', 'ORB', 'PF', '3P']])
-dftest['Prediction'] = prediction
-dftest.to_csv('./data/model/predictions.csv', index=False)
-print(model.score(dftest[['SRS', 'ORB', 'PF', '3P']], dftest['Team1Win']))
+print("AVG %: ", total_score / 7)
 # print('--------------------------------')
 # print(np.where(dftest['Prediction'] == dftest['Team1Win'], 1, 0).sum() / len(dftest['Prediction']))

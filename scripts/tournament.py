@@ -30,7 +30,7 @@ class Tournament:
                 r64 = {}
                 for region in regions:
                     temp = []
-                    tempdf = self.df.loc[(self.df['REGION'] == region) & (self.df['POSTSEASON'] != 'R68')]
+                    tempdf = self.df.loc[(self.df['REGION'] == region) & (self.df['POSTSEASON'] != 'R68')].copy()
                     tempdf.sort_values(by=['SEED'], inplace=True)
                     lista = list(tempdf['School'])
                     temp.append([lista[15], lista[0]] if self.df.loc[(self.df["School"] == lista[0])]["POSTSEASON"].values[0] == 'R64' else [lista[0], lista[15]])
