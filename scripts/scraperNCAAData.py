@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.action_chains import ActionChains
 
 
-year = 2013 #Starting year which you want to scrape data for
+year = 2022 #Starting year which you want to scrape data for
 path = "C:\Program Files (x86)\chromedriver.exe" #Path of chrome driver installation
 
 stats_type = ["-opponent-stats", "-advanced-school-stats", "-advanced-opponent-stats"]
@@ -46,7 +46,7 @@ def find_data(driver, a, filename):
     
     store_data(data, filename)
 
-while year < 2023:
+while year == 2022:
 
     find_data(driver, a, str(year) + "-school-stats")
 
