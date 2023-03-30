@@ -6,7 +6,7 @@ teams = {"east": set(), "midwest": set(), "south": set(), "west": set()}
 regions = ["east", "midwest", "south", "west"]
 
 
-for i in range(2014, 2022):
+for i in range(2022, 2023):
     if i != 2020:
         teams = {"east": set(), "midwest": set(), "south": set(), "west": set()}
         
