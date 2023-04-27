@@ -1,10 +1,8 @@
 import pandas as pd
-import numpy as np
 from tournament import Tournament
-from sklearn.linear_model import LogisticRegression
 
 mapa = {'Champions': 8, '2ND' : 7, 'F4' : 6, 'E8' : 5, 'S16' : 4, 'R32' : 3, 'R64' : 2, 'R68' : 1}
-df = pd.read_csv('./data/perGameStats/combined.csv')
+df = pd.read_csv('./data/final/combined.csv')
 df['POSTSEASON_value'] = df['POSTSEASON'].map(mapa)
 df['QUALIFIED'] = ~pd.isna(df['SEED'])
 
@@ -132,31 +130,16 @@ def make_training_data(tournaments, path):
 
 
 
-
-total_score = 0
-for j in range(2014,2022):
-    if j != 2020:
+YEAR_TEST = 2021
+for j in range(2014,2024):
+    if YEAR_TEST != 2020:
         tournaments = []
-        for i in range(2014, 2022):
-            if i not in [2020, j]:
+        for i in range(2014, 2024):
+            if i not in [2020, YEAR_TEST]:
                 tournament = Tournament(df, None, i)
                 tournaments.append(tournament)
 
-        make_training_data([Tournament(df, None, j)], './data/model/testData.csv')
+        make_training_data([Tournament(df, None, YEAR_TEST)], './data/model/testData.csv')
         make_training_data(tournaments, './data/model/trainingData.csv')
 
-        dftrain = pd.read_csv('./data/model/trainingData.csv')
-        dftest = pd.read_csv('./data/model/testData.csv')
-
-        model = LogisticRegression(random_state=0).fit(dftrain[['SRS', 'ORB', 'PF', '3P', 'STL', 'AST', 'BLK', 'FT%', 'TS%', 'SEED']], dftrain['Team1Win'])
-
-        prediction = model.predict(dftest[['SRS', 'ORB', 'PF', '3P', 'STL', 'AST', 'BLK', 'FT%', 'TS%', 'SEED']])
-        dftest['Prediction'] = prediction
-        dftest.to_csv('./data/model/predictions.csv', index=False)
-        score = model.score(dftest[['SRS', 'ORB', 'PF', '3P', 'STL', 'AST', 'BLK', 'FT%', 'TS%', 'SEED']], dftest['Team1Win'])
-        total_score += score
-        print(j, ': ', score)
-
-print("AVG %: ", total_score / 7)
-# print('--------------------------------')
-# print(np.where(dftest['Prediction'] == dftest['Team1Win'], 1, 0).sum() / len(dftest['Prediction']))
+        

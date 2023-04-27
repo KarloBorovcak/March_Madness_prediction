@@ -1,7 +1,6 @@
-import pandas as pd
 
 regions = ['EAST', 'MIDWEST', 'SOUTH', 'WEST']
-final_four = {'2021':['SOUTH', 'MIDWEST'], '2019':['SOUTH','MIDWEST'], '2018':['SOUTH','EAST'], 
+final_four = {'2023':['SOUTH','EAST'],'2022':['SOUTH', 'MIDWEST'],'2021':['SOUTH', 'MIDWEST'], '2019':['SOUTH','MIDWEST'], '2018':['SOUTH','EAST'], 
 '2017':['SOUTH','MIDWEST'], '2016':['SOUTH','WEST'], '2015':['SOUTH','EAST'], '2014':['SOUTH','EAST']}
 
 rounds = ['R68', 'R64', 'R32', 'S16', 'E8', 'F4', 'Champions']
@@ -99,5 +98,3 @@ class Tournament:
                 print("WINNER: ", self.bracket[round][0])
 
 
-    def predict_games(self):
-        pass
