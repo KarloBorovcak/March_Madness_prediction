@@ -1,0 +1,613 @@
+School,YEAR,CLUSTER
+Albany (NY),2014,3
+American,2014,1
+Arizona,2014,2
+Arizona State,2014,2
+Baylor,2014,1
+Brigham Young,2014,2
+Cal Poly,2014,0
+Cincinnati,2014,3
+Coastal Carolina,2014,2
+Colorado,2014,3
+Connecticut,2014,1
+Creighton,2014,0
+Dayton,2014,1
+Delaware,2014,3
+Duke,2014,3
+Eastern Kentucky,2014,0
+Florida,2014,2
+George Washington,2014,3
+Gonzaga,2014,0
+Harvard,2014,2
+Iowa,2014,2
+Iowa State,2014,2
+Kansas,2014,3
+Kansas State,2014,0
+Kentucky,2014,0
+Louisiana,2014,3
+Louisville,2014,3
+Manhattan,2014,1
+Massachusetts,2014,0
+Memphis,2014,1
+Mercer,2014,0
+Michigan,2014,3
+Michigan State,2014,0
+Milwaukee,2014,0
+Mount St. Mary's,2014,3
+NC State,2014,3
+Nebraska,2014,0
+New Mexico,2014,1
+New Mexico State,2014,3
+North Carolina,2014,3
+North Carolina Central,2014,3
+North Dakota State,2014,1
+Ohio State,2014,3
+Oklahoma,2014,1
+Oklahoma State,2014,0
+Oregon,2014,0
+Pittsburgh,2014,3
+Providence,2014,1
+Saint Joseph's,2014,2
+Saint Louis,2014,3
+San Diego State,2014,3
+Stanford,2014,2
+Stephen F. Austin,2014,3
+Syracuse,2014,1
+Tennessee,2014,1
+Texas,2014,3
+Texas Southern,2014,1
+Tulsa,2014,0
+UCLA,2014,2
+Villanova,2014,1
+Virginia,2014,2
+Virginia Commonwealth,2014,2
+Weber State,2014,1
+Western Michigan,2014,2
+Wichita State,2014,1
+Wisconsin,2014,3
+Wofford,2014,2
+Xavier,2014,3
+Albany (NY),2015,2
+Arizona,2015,2
+Arkansas,2015,0
+Baylor,2015,0
+Belmont,2015,2
+Boise State,2015,3
+Brigham Young,2015,1
+Buffalo,2015,3
+Butler,2015,2
+Cincinnati,2015,0
+Coastal Carolina,2015,3
+Davidson,2015,1
+Dayton,2015,2
+Duke,2015,0
+Eastern Washington,2015,3
+Georgetown,2015,0
+Georgia,2015,3
+Georgia State,2015,0
+Gonzaga,2015,3
+Hampton,2015,2
+Harvard,2015,3
+Indiana,2015,3
+Iowa,2015,0
+Iowa State,2015,1
+Kansas,2015,0
+Kentucky,2015,1
+Lafayette,2015,0
+Louisiana State,2015,2
+Louisville,2015,2
+Manhattan,2015,3
+Maryland,2015,1
+Michigan State,2015,2
+Mississippi,2015,1
+NC State,2015,2
+New Mexico State,2015,0
+North Carolina,2015,2
+North Dakota State,2015,2
+North Florida,2015,0
+Northeastern,2015,3
+Northern Iowa,2015,0
+Notre Dame,2015,3
+Ohio State,2015,3
+Oklahoma,2015,1
+Oklahoma State,2015,1
+Oregon,2015,1
+Providence,2015,0
+Purdue,2015,2
+Robert Morris,2015,0
+San Diego State,2015,1
+Southern Methodist,2015,0
+St. John's (NY),2015,2
+Stephen F. Austin,2015,3
+Texas,2015,0
+Texas Southern,2015,1
+UAB,2015,0
+UC Irvine,2015,1
+UCLA,2015,1
+Utah,2015,0
+Valparaiso,2015,1
+Villanova,2015,0
+Virginia,2015,1
+Virginia Commonwealth,2015,3
+West Virginia,2015,3
+Wichita State,2015,2
+Wisconsin,2015,1
+Wofford,2015,2
+Wyoming,2015,1
+Xavier,2015,1
+Arizona,2016,1
+Austin Peay,2016,0
+Baylor,2016,0
+Buffalo,2016,2
+Butler,2016,3
+Cal State Bakersfield,2016,2
+California,2016,0
+Chattanooga,2016,0
+Cincinnati,2016,0
+Colorado,2016,3
+Connecticut,2016,2
+Dayton,2016,2
+Duke,2016,1
+Fairleigh Dickinson,2016,0
+Florida Gulf Coast,2016,1
+Fresno State,2016,0
+Gonzaga,2016,1
+Green Bay,2016,0
+Hampton,2016,2
+Hawaii,2016,2
+Holy Cross,2016,2
+Indiana,2016,3
+Iona,2016,2
+Iowa,2016,2
+Iowa State,2016,2
+Kansas,2016,3
+Kentucky,2016,1
+Little Rock,2016,3
+Maryland,2016,0
+Miami (FL),2016,0
+Michigan,2016,2
+Michigan State,2016,1
+Middle Tennessee,2016,0
+North Carolina,2016,1
+Northern Iowa,2016,1
+Notre Dame,2016,1
+Oklahoma,2016,3
+Oregon,2016,0
+Oregon State,2016,2
+Pittsburgh,2016,0
+Providence,2016,2
+Purdue,2016,0
+Saint Joseph's,2016,1
+Seton Hall,2016,3
+South Dakota State,2016,3
+Southern,2016,1
+Southern California,2016,1
+Stephen F. Austin,2016,3
+Stony Brook,2016,3
+Syracuse,2016,2
+Temple,2016,2
+Texas,2016,2
+Texas A&M,2016,2
+Texas Tech,2016,3
+Tulsa,2016,1
+UNC Asheville,2016,0
+UNC Wilmington,2016,3
+Utah,2016,0
+Vanderbilt,2016,3
+Villanova,2016,3
+Virginia,2016,0
+Virginia Commonwealth,2016,3
+Weber State,2016,1
+West Virginia,2016,3
+Wichita State,2016,2
+Wisconsin,2016,1
+Xavier,2016,2
+Yale,2016,0
+Abilene Christian,2019,1
+Arizona State,2019,0
+Auburn,2019,0
+Baylor,2019,3
+Belmont,2019,0
+Bradley,2019,2
+Buffalo,2019,0
+Central Florida,2019,0
+Cincinnati,2019,3
+Colgate,2019,0
+Duke,2019,0
+Fairleigh Dickinson,2019,3
+Florida,2019,1
+Florida State,2019,0
+Gardner-Webb,2019,3
+Georgia State,2019,1
+Gonzaga,2019,3
+Houston,2019,1
+Iona,2019,1
+Iowa,2019,0
+Iowa State,2019,1
+Kansas,2019,2
+Kansas State,2019,2
+Kentucky,2019,2
+Liberty,2019,3
+Louisiana State,2019,0
+Louisville,2019,0
+Marquette,2019,2
+Maryland,2019,3
+Michigan,2019,2
+Michigan State,2019,2
+Minnesota,2019,2
+Mississippi,2019,1
+Mississippi State,2019,3
+Montana,2019,3
+Murray State,2019,1
+Nevada,2019,0
+New Mexico State,2019,0
+North Carolina,2019,2
+North Carolina Central,2019,3
+North Dakota State,2019,3
+Northeastern,2019,0
+Northern Kentucky,2019,0
+Ohio State,2019,1
+Oklahoma,2019,0
+Old Dominion,2019,1
+Oregon,2019,3
+Prairie View,2019,3
+Purdue,2019,0
+Saint Louis,2019,3
+Saint Mary's (CA),2019,1
+Seton Hall,2019,1
+St. John's (NY),2019,2
+Syracuse,2019,0
+Temple,2019,3
+Tennessee,2019,2
+Texas Tech,2019,3
+UC Irvine,2019,2
+Utah State,2019,0
+Vermont,2019,1
+Villanova,2019,2
+Virginia,2019,0
+Virginia Commonwealth,2019,0
+Virginia Tech,2019,1
+Washington,2019,0
+Wisconsin,2019,0
+Wofford,2019,0
+Yale,2019,1
+Akron,2022,3
+Alabama,2022,1
+Arizona,2022,2
+Arkansas,2022,0
+Auburn,2022,0
+Baylor,2022,0
+Boise State,2022,2
+Bryant,2022,2
+Cal State Fullerton,2022,0
+Chattanooga,2022,0
+Colgate,2022,3
+Colorado State,2022,0
+Connecticut,2022,2
+Creighton,2022,2
+Davidson,2022,3
+Delaware,2022,2
+Duke,2022,1
+Georgia State,2022,2
+Gonzaga,2022,3
+Houston,2022,3
+Illinois,2022,1
+Indiana,2022,3
+Iowa,2022,3
+Iowa State,2022,1
+Jacksonville State,2022,1
+Kansas,2022,2
+Kentucky,2022,2
+Longwood,2022,2
+Louisiana State,2022,3
+Loyola (IL),2022,3
+Marquette,2022,0
+Memphis,2022,2
+Miami (FL),2022,2
+Michigan,2022,3
+Michigan State,2022,3
+Montana State,2022,1
+Murray State,2022,1
+New Mexico State,2022,1
+Norfolk State,2022,0
+North Carolina,2022,2
+Notre Dame,2022,0
+Ohio State,2022,0
+Providence,2022,0
+Purdue,2022,3
+Richmond,2022,0
+Rutgers,2022,3
+Saint Mary's (CA),2022,3
+Saint Peter's,2022,1
+San Diego State,2022,1
+San Francisco,2022,3
+Seton Hall,2022,2
+South Carolina,2022,3
+South Dakota State,2022,3
+TCU,2022,3
+Tennessee,2022,1
+Texas,2022,1
+Texas A&M-Corpus Christi,2022,2
+Texas Southern,2022,1
+Texas Tech,2022,1
+UAB,2022,3
+UCLA,2022,0
+Vermont,2022,1
+Villanova,2022,1
+Virginia Tech,2022,2
+Wisconsin,2022,2
+Wright State,2022,2
+Wyoming,2022,1
+Yale,2022,0
+Arizona,2017,2
+Arkansas,2017,0
+Baylor,2017,2
+Bucknell,2017,3
+Butler,2017,3
+Cincinnati,2017,0
+Creighton,2017,2
+Dayton,2017,1
+Duke,2017,0
+East Tennessee State,2017,3
+Florida,2017,1
+Florida Gulf Coast,2017,3
+Florida State,2017,2
+Gonzaga,2017,0
+Iona,2017,0
+Iowa State,2017,2
+Jacksonville State,2017,2
+Kansas,2017,3
+Kansas State,2017,2
+Kent State,2017,2
+Kentucky,2017,0
+Louisville,2017,1
+Marquette,2017,0
+Maryland,2017,3
+Miami (FL),2017,3
+Michigan,2017,2
+Michigan State,2017,2
+Middle Tennessee,2017,3
+Minnesota,2017,0
+Mount St. Mary's,2017,3
+Nevada,2017,0
+New Mexico State,2017,1
+New Orleans,2017,0
+North Carolina,2017,2
+North Carolina Central,2017,3
+North Dakota,2017,3
+Northern Kentucky,2017,2
+Northwestern,2017,2
+Notre Dame,2017,1
+Oklahoma State,2017,2
+Oregon,2017,0
+Princeton,2017,0
+Providence,2017,0
+Purdue,2017,3
+Rhode Island,2017,3
+Saint Mary's (CA),2017,0
+Seton Hall,2017,3
+South Carolina,2017,0
+South Dakota State,2017,0
+Southern California,2017,0
+Southern Methodist,2017,3
+Texas Southern,2017,1
+Troy,2017,2
+UC Davis,2017,1
+UCLA,2017,1
+UNC Wilmington,2017,1
+Vanderbilt,2017,2
+Vermont,2017,3
+Villanova,2017,0
+Virginia,2017,1
+Virginia Commonwealth,2017,0
+Virginia Tech,2017,3
+Wake Forest,2017,3
+West Virginia,2017,3
+Wichita State,2017,1
+Winthrop,2017,2
+Wisconsin,2017,1
+Xavier,2017,3
+Alabama,2018,2
+Arizona,2018,3
+Arizona State,2018,3
+Arkansas,2018,1
+Auburn,2018,0
+Bucknell,2018,1
+Buffalo,2018,1
+Butler,2018,2
+Cal State Fullerton,2018,2
+Cincinnati,2018,0
+Clemson,2018,0
+College of Charleston,2018,3
+Creighton,2018,0
+Davidson,2018,2
+Duke,2018,1
+Florida,2018,1
+Florida State,2018,0
+Georgia State,2018,3
+Gonzaga,2018,3
+Houston,2018,0
+Iona,2018,2
+Kansas,2018,3
+Kansas State,2018,0
+Kentucky,2018,1
+Lipscomb,2018,0
+Long Island University,2018,0
+Loyola (IL),2018,0
+Marshall,2018,0
+Maryland-Baltimore County,2018,1
+Miami (FL),2018,2
+Michigan,2018,2
+Michigan State,2018,1
+Missouri,2018,1
+Montana,2018,1
+Murray State,2018,2
+NC State,2018,3
+Nevada,2018,0
+New Mexico State,2018,0
+North Carolina,2018,0
+North Carolina Central,2018,2
+Ohio State,2018,3
+Oklahoma,2018,1
+Pennsylvania,2018,3
+Providence,2018,2
+Purdue,2018,0
+Radford,2018,2
+Rhode Island,2018,2
+San Diego State,2018,2
+Seton Hall,2018,3
+South Dakota State,2018,1
+St. Bonaventure,2018,1
+Stephen F. Austin,2018,0
+Syracuse,2018,3
+TCU,2018,0
+Tennessee,2018,0
+Texas,2018,3
+Texas A&M,2018,2
+Texas Southern,2018,0
+Texas Tech,2018,2
+UCLA,2018,1
+UNC Greensboro,2018,2
+Villanova,2018,1
+Virginia,2018,3
+Virginia Tech,2018,1
+West Virginia,2018,3
+Wichita State,2018,1
+Wright State,2018,0
+Xavier,2018,2
+Abilene Christian,2021,3
+Alabama,2021,2
+Appalachian State,2021,3
+Arkansas,2021,0
+Baylor,2021,3
+Brigham Young,2021,0
+Clemson,2021,1
+Cleveland State,2021,2
+Colgate,2021,3
+Colorado,2021,1
+Connecticut,2021,3
+Creighton,2021,2
+Drake,2021,1
+Drexel,2021,2
+Eastern Washington,2021,1
+Florida,2021,1
+Florida State,2021,2
+Georgetown,2021,2
+Georgia Tech,2021,1
+Gonzaga,2021,2
+Grand Canyon,2021,1
+Hartford,2021,1
+Houston,2021,2
+Illinois,2021,0
+Iona,2021,3
+Iowa,2021,1
+Kansas,2021,1
+Liberty,2021,1
+Louisiana State,2021,2
+Loyola (IL),2021,1
+Maryland,2021,2
+Michigan,2021,3
+Michigan State,2021,1
+Missouri,2021,0
+Morehead State,2021,0
+Mount St. Mary's,2021,0
+Norfolk State,2021,2
+North Carolina,2021,3
+North Texas,2021,0
+Ohio,2021,0
+Ohio State,2021,2
+Oklahoma,2021,0
+Oklahoma State,2021,1
+Oral Roberts,2021,1
+Oregon,2021,1
+Oregon State,2021,3
+Purdue,2021,1
+Rutgers,2021,2
+San Diego State,2021,3
+Southern California,2021,2
+St. Bonaventure,2021,2
+Syracuse,2021,1
+Tennessee,2021,0
+Texas,2021,2
+Texas Southern,2021,1
+Texas Tech,2021,2
+UC Santa Barbara,2021,3
+UCLA,2021,0
+UNC Greensboro,2021,2
+Utah State,2021,3
+Villanova,2021,3
+Virginia,2021,0
+Virginia Commonwealth,2021,0
+Virginia Tech,2021,2
+West Virginia,2021,1
+Wichita State,2021,0
+Winthrop,2021,2
+Wisconsin,2021,3
+Alabama,2023,3
+Arizona,2023,2
+Arizona State,2023,0
+Arkansas,2023,0
+Auburn,2023,3
+Baylor,2023,1
+Boise State,2023,0
+Colgate,2023,1
+College of Charleston,2023,3
+Connecticut,2023,1
+Creighton,2023,3
+Drake,2023,2
+Duke,2023,2
+Fairleigh Dickinson,2023,1
+Florida Atlantic,2023,0
+Furman,2023,3
+Gonzaga,2023,0
+Grand Canyon,2023,0
+Houston,2023,3
+Howard,2023,0
+Illinois,2023,0
+Indiana,2023,0
+Iona,2023,3
+Iowa,2023,2
+Iowa State,2023,3
+Kansas,2023,2
+Kansas State,2023,3
+Kennesaw State,2023,1
+Kent State,2023,1
+Kentucky,2023,3
+Louisiana,2023,0
+Marquette,2023,3
+Maryland,2023,0
+Memphis,2023,0
+Miami (FL),2023,3
+Michigan State,2023,2
+Mississippi State,2023,3
+Missouri,2023,0
+Montana State,2023,3
+NC State,2023,0
+Nevada,2023,3
+Northern Kentucky,2023,3
+Northwestern,2023,3
+Oral Roberts,2023,1
+Penn State,2023,2
+Pittsburgh,2023,1
+Princeton,2023,3
+Providence,2023,2
+Purdue,2023,1
+Saint Mary's (CA),2023,2
+San Diego State,2023,2
+Southeast Missouri State,2023,1
+Southern California,2023,3
+TCU,2023,2
+Tennessee,2023,0
+Texas,2023,2
+Texas A&M,2023,2
+Texas A&M-Corpus Christi,2023,2
+Texas Southern,2023,0
+UC Santa Barbara,2023,3
+UCLA,2023,2
+UNC Asheville,2023,2
+Utah State,2023,2
+Vermont,2023,0
+Virginia,2023,2
+Virginia Commonwealth,2023,1
+West Virginia,2023,3
+Xavier,2023,2
