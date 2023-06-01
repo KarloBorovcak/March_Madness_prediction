@@ -14,8 +14,13 @@ def bracket_score(bracket, model, features):
         prediction = model.predict(row[features].values.reshape(1, -1))
         if prediction == row['Team1Win']:
             score += 2 ** rounds.index(row['ROUND']) * 10
+
+        print(row['Team1'], row['Team2'], row['ROUND'], prediction, row['Team1Win'], score)
         
     return score
+
+        
+
 
 TARGET_YEAR = 2023
 
@@ -37,12 +42,13 @@ bracket = data[data['Year'] == TARGET_YEAR]
 
 # Shuffle the training data
 data = data.sample(frac=1, random_state=42)
-
+print(data.columns)
 FEATURES = ['OP', 'FGA', 'FG%', 'FT', 'FTA', 'ORB', 'STL', 'BLK', 'TOV', 'PF', 'ORtg', '+-', 'SEED']
-# FEATURES = ['SRS', 'SEED', 'ORB', 'PF', '3P', 'STL', 'AST', 'BLK', 'FT%', 'TS%', 'Team1Cluster', 'Team2Cluster']
-# FEATURES = ['SRS', 'SEED', '+-', 'ORtg', 'PF', 'TS%', 'FT', '3P', 'TRB', 'AST', 'STL', 'BLK', 'Team1Cluster', 'Team2Cluster']
-# FEATURES = ['SEED', 'SRS', 'Team1Cluster', 'Team2Cluster']
+FEATURES = ['SRS', 'SEED', 'Team1Cluster', 'Team2Cluster']
 
+FEATURES = ['TP', 'OP', 'FG', 'FGA','FG%', '3P', '3P%', 'FT','FT%','AST','STL', 'BLK', 'PF', 'FTr', 'TRB%','AST%','TOV%', '+-', 'SEED', 'SRS']
+
+print(len(FEATURES))
 
 # ALL DATA
 X = data[FEATURES]
@@ -92,7 +98,7 @@ param_grid_lr = {'penalty': ['l1', 'l2', 'elasticnet', 'none'],
               'class_weight': [None, 'balanced'],
               'solver': ['newton-cg', 'lbfgs', 'liblinear', 'sag', 'saga']}
   
-grid = GridSearchCV(xgb.XGBClassifier(), param_grid_xgb, refit = True, verbose = 3, n_jobs=-1)
+grid = GridSearchCV(SVC(), param_grid_svc, refit = True, verbose = 3, n_jobs=-1)
 
 
 # # fitting the model for grid search
@@ -103,8 +109,7 @@ grid = GridSearchCV(xgb.XGBClassifier(), param_grid_xgb, refit = True, verbose =
 # print("Best score: ", grid.best_score_)
 
 
-
-lr = LogisticRegression(C=0.1, class_weight='balanced', fit_intercept=True, penalty='l1', solver='liblinear')
+lr = LogisticRegression(C=0.01, class_weight='balanced', penalty='l1', solver='saga')
 lr.fit(X_train_year, y_train_year)
 
 print("Bracket score Logistic:", bracket_score(bracket, lr, FEATURES))
@@ -114,8 +119,7 @@ svc.fit(X_train_year, y_train_year)
 
 print("Bracket score SVC:", bracket_score(bracket, svc, FEATURES))
 
-
-xgbM = xgb.XGBClassifier()
+xgbM = xgb.XGBClassifier(colsample_bytree=1.0, gamma=0.1, learning_rate=0.01, max_depth=10, n_estimators=50, reg_alpha=10, reg_lambda=10, subsample=0.5)
 xgbM.fit(X_train_year, y_train_year)
 
 print("Bracket score XGB:", bracket_score(bracket, xgbM, FEATURES))
